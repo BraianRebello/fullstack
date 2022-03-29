@@ -1,0 +1,8 @@
+1 Abrir a torneira
+2 molhar a escova
+3 escovar os dentes de cima
+4 escovar os dentes de baixo
+5 escovar atras 
+6 escovar na frente 
+7 escovar fazendo movimentos circulares 
+8 lavar a boca
