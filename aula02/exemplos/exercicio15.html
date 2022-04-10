@@ -1,0 +1,15 @@
+<script>
+  
+    const numero = parseInt(prompt("Digite um número"));
+    let i;
+  
+    if (numero != 0) {
+      for (i = 1; i < numero; i++) {
+        if (i % 2 === 1) {
+          document.write(`<h1>${i}</h1>`);
+        }
+      }
+    } else {
+      document.write("<h1> INVALIDO </h1>");
+    }
+  </script>

@@ -1,4 +1,18 @@
 <script>
-    var macas = parseFloat(prompt("Qual o número de maçãs compradas? "));
-var total 
-</script>
+    var quantidade = parseInt(prompt("Quantas maçãs você quer comprar: "));
+    var preco = 0;
+  
+    if (quantidade > 0 && quantidade < 12) {
+      preco = 1.3;
+    } else {
+      preco = 1.0;
+    }
+  
+    let totalMacas = maca * quantidade;
+  
+
+    document.write(
+      `<h1>Total: R$ ${totalMacas} </h1>`
+    );
+
+  </script>

@@ -1,0 +1,15 @@
+<script>
+
+let dados = [];
+  let i = 1;
+  let totalDosDados = 0;
+
+  do {
+    dados[i] = parseFloat(prompt(`Digite o valor ${i}: `));
+    totalDosDados += dados[i];
+    i++;
+  } while (i <= 5);
+
+  document.write(`<h2>A soma dos dados digitados foram: ${totalDosDados}<h2/>`);
+
+</script>
