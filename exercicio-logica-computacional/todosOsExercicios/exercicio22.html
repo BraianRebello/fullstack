@@ -1,0 +1,25 @@
+<script>
+            function imprimeNumerosPrimosAteN(num){
+                let numbers = new Array();
+        
+                for (let i = 0; i <= num; i++){
+                    if (verificarNumerosPrimos(i)){
+                    numbers.push(i);
+                    }
+        
+                    numbers.forEach((numero, indice) =>indice ===numbers.length- 1
+                    ? document.write(`${numero}.`)
+                    : document.write(`${numero}.`)
+                    );
+                }
+            }
+    function verificarNumerosPrimos(num) {
+    for  (let i = 2; i < num; i++)
+    if (num % i === 0){
+        return false;
+    }
+    return num > 1;
+    }
+
+    imprimeNumerosPrimosAteN(100);
+</script>

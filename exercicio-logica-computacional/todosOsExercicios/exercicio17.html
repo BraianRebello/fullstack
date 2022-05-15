@@ -1,19 +1,15 @@
 <script>
 
-const a = parseFloat(prompt(" lado 01:"));
-  const b = parseFloat(prompt(" lado 02:"));
-  const c = parseFloat(prompt(" lado 03:"));
-
-  if (a < b + c && b < a + c && c < a + b) {
-    if (a === b && a === c) {
-      document.write("EQUILÁTERO");
-    } else if (a === b || a === c || b === c) {
-      document.write("ISOSCELES");
-    } else {
-      document.write("ESCALENO");
+  const cofre = [0.01, 0.05, 0.1, 0.25, 0.5, 1.0];
+    let i;
+    let poupado = 0;
+  
+    for (i = 0; i < cofre.length; i++) {
+      poupado += cofre[i];
     }
-  } else {
-    document.write("NÃO É TRIANGULO");
-  }
-
-</script>
+  
+    document.write(
+      `<h1>O valor poupado foi de ${poupado}</h1>`
+    );
+  
+  </script>

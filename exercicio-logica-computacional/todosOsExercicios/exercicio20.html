@@ -1,15 +1,22 @@
 <script>
+  const salario = parseFloat(prompt("qual o seu salario"));
 
-const valor = parseFloat(prompt(" valor inicial: "));
-  const taxaImposto = parseFloat(prompt("A taxa de imposto é? "));
+  function calculoINSS(salario) {
+      let taxa;
+      if (salario <= 1.212) {
+         return (salario - salario * (7.5 / 100)).toFixed(2);
+      } else if (salario > 1212 && salario <= 2427.35) {
+          return (salario - salario * (9 / 100)).toFixed(2);
+      } else if (salario > 2427.35 && salario <= 3641.03) {
+          return (salario - salario * (12 / 100)).toFixed(2);
+      } else if (salario > 3641.03 && salario <= 7087.22) {
+          return (salario - salario * (14 / 100)).toFixed(2);
+      } else {
+          return "valor incorreto";
+      }
+  }
 
-  const calcularImposto = (valor, taxa) => valor + taxa * (taxa / 100);
+  let valorINSS = calculoINSS(salario);
 
-  document.write(
-    `<h1>O valor com o imposto calculado é: ${calcularImposto(
-      valor,
-      taxaImposto
-    )}</h1>`
-  );
-
+  document.write(`<p>O salario com INSS descontado e igual a ${valorINSS}</p>`);
 </script>

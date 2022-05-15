@@ -1,0 +1,20 @@
+<script>
+    function verificandoNumerosPerfeito(numero) {
+        let soma = 0;
+        for (let i = 1; i < numero; i++) {
+            if (!(numero % i)) {
+                soma += i;
+            }
+        }
+        return soma == numero;
+    }
+
+    function imprimindoNumerosPerfeitosAteN(numero) {
+        for (let i = 1; i <= numero; i++) {
+            if (verificandoNumerosPerfeito(i) == true) {
+                document.write(`<h1>${i}</h1>`);
+            }
+        }
+    }
+    imprimindoNumerosPerfeitosAteN(10000);
+</script>

@@ -1,14 +1,8 @@
 <script>
-    
-    let dados = [];
-    let i = 1;
-    let totalDosDados = 0;
-  
-    while (i <= 5) {
-      dados[i] = parseFloat(prompt(`Digite o valor ${i}: `));
-      totalDosDados += dados[i];
-      i++;
-    }
+    let fahrenheit = parseFloat(
+        prompt("Qual o valor em Fahrenheit")
+    );
+    let celsius = 9/(5 * (fahrenheit - 32));
 
-    document.write(`<h2>A soma dos dados foram: ${totalDosDados}<h2/>`);
-  </script>
+    document.write(`<h1>Valor em Celsius: ${celsius}° <h2/>`);
+</script>

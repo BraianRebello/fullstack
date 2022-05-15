@@ -1,13 +1,19 @@
 <script>
 
-const a = parseFloat(prompt(" lado 01:"));
-  const b = parseFloat(prompt(" lado 02:"));
-  const c = parseFloat(prompt(" lado 03:"));
-
-  if (a < b + c && b < a + c && c < a + b) {
-    document.write("É triângulo");
-  } else {
-    document.write("Não é triângulo");
-  }
-
-</script>
+  const a = parseFloat(prompt(" lado 01:"));
+    const b = parseFloat(prompt(" lado 02:"));
+    const c = parseFloat(prompt(" lado 03:"));
+  
+    if (a < b + c && b < a + c && c < a + b) {
+      if (a === b && a === c) {
+        document.write("EQUILÁTERO");
+      } else if (a === b || a === c || b === c) {
+        document.write("ISOSCELES");
+      } else {
+        document.write("ESCALENO");
+      }
+    } else {
+      document.write("NÃO É TRIANGULO");
+    }
+  
+  </script>

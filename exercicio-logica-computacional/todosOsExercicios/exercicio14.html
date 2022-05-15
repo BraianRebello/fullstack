@@ -1,17 +1,15 @@
 <script>
-let idade = parseInt(prompt("Digite sua idade: "));
-  let sexo = prompt("Digite seu sexo: ");
-  let condicao = prompt(
-    "Tem alguma sua condição especial? Caso tenha, diga qual(gestante ou deficiente)"
-  );
+  
+  const numero = parseInt(prompt("Digite um número"));
+  let i;
 
-  if (idade >= 60) {
-    document.write(`FILA PREFERENCIAL`);
-  } else if (condicao === "deficiente") {
-    document.write(`FILA PREFERENCIAL`);
-  } else if (sexo === "feminino" && condicao === "gestante") {
-    document.write(`FILA PREFERENCIAL`);
+  if (numero != 0) {
+    for (i = 1; i < numero; i++) {
+      if (i % 2 === 1) {
+        document.write(`<h1>${i}</h1>`);
+      }
+    }
   } else {
-    document.write(`FILA NORMAL`);
+    document.write("<h1> INVALIDO </h1>");
   }
 </script>

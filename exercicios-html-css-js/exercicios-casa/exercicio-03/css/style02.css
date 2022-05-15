@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 0, 34, 0.116);
+
+}
+
+section.linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+section.linha div.coluna {
+    display: flex;
+    margin: 10px;
+  
+}
+
+section.linha div.coluna img {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.623);
+    width: 150px;
+    margin: 10px;
+}

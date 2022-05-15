@@ -1,0 +1,37 @@
+<script>
+    
+    let num1 = parseFloat(prompt("Digite um número:"));
+    let num2 = parseFloat(prompt("Digite outro número:"));
+    let num3 = parseFloat(prompt("Digite mais um número:"));
+  
+    let nums = [num1, num2, num3];
+  
+    function retornarNumeroMenor(array) {
+      let menor = array[0];
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] < menor) {
+          menor = array[i];
+        }
+      }
+  
+      return menor;
+    }
+  
+    function retornarNumeroMaior(array) {
+      let maior = array[0];
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] > maior) {
+          maior = array[i];
+        }
+      }
+  
+      return maior;
+    }
+  
+    let numberMinor = retornarNumeroMaior(nums);
+    let NumberBigger = retornarNumeroMenor(nums);
+  
+    document.write(
+      `<h1> O menor número é ${maiorNumero} e o maior número é ${menorNumero}</h1>`
+    );
+  </script>

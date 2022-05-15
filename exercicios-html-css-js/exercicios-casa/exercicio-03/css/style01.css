@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.linha div.coluna {
+    margin: 10px;
+}
+
+section.linha div.coluna img {
+    border-radius: 50%;
+    width: 150px;
+}

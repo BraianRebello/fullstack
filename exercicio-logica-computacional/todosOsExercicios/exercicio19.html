@@ -1,19 +1,15 @@
 <script>
 
-    const valor = parseInt(prompt("Digite um numero "));
-    
-      const verificarPositivoNegativo = (num) => {
-        if (num > 0) {
-          return "P";
-        } else if (num <= 0) {
-          return "N";
-        } else {
-          return "INVALIDO";
-        }
-      };
-    
-      const positivoNegativo = verificarPositivoNegativo(valor);
-    
-      document.write(`<h1>${positivoNegativo}</h1>`);
-    
-    </script>
+  const valor = parseFloat(prompt(" valor inicial: "));
+    const taxaImposto = parseFloat(prompt("A taxa de imposto é? "));
+  
+    const calcularImposto = (valor, taxa) => valor + taxa * (taxa / 100);
+  
+    document.write(
+      `<h1>O valor com o imposto calculado é: ${calcularImposto(
+        valor,
+        taxaImposto
+      )}</h1>`
+    );
+  
+  </script>

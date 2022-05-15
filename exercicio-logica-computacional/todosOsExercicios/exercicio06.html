@@ -1,12 +1,12 @@
 <script>
-  
-
-    let custoCarroFabrica = parseFloat(prompt("Qual o custo de fábrica do carro? "));
-    let percentualDistribuidor = 28/100;
-    let impostos = 45/100;
-  
-    let custoCarro =+ (custoCarroFabrica * percentualDistribuidor) + (custoCarroFabrica * percentualDistribuidor) + impostos;
-  
-    document.write(`o custo do carro foi ${ custoCarro }`);
     
-  </script>
+  const salarioMensal = parseFloat(prompt("Qual o seu salário mensal?"));
+  const reajuste = parseFloat(
+    prompt("Qual o percentual de reajuste?")
+  );
+
+  let salarioNovo =+ (salarioMensal * reajuste) / 100;
+
+  document.write(` ${salarioNovo}`);
+  
+</script>
